@@ -12,13 +12,9 @@ body{
   box-shadow: inset 0px 17px 28px 0px rgba(0,0,0,0.75);
 }
 
-.nav{
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-}
-.nav img{
-  margin-left: 3rem;
+.nav img {
+  height: 45px;
+  margin-left: 1rem;
 }
 
 .hero{
@@ -29,28 +25,34 @@ body{
   align-items: center;
 }
 .hero p{
-  font-size: 54px;
+  font-size: 30px;
   color:white;
   margin: 0 0 30px 0;
+  text-align: center;
 }
 .user{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .user p{
   color: #8a8a8a;
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   margin: 5px 0;
 }
 .user img{
-  height: 9rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 5px;
 }
 .users{
   display: flex;
-  gap:2.5rem;
+  gap:0.5rem;
+  width: 20rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .users img:hover{
@@ -65,12 +67,49 @@ body{
   color: #8a8a8a;
   background: none;
   border:1px solid #8a8a8a;
-  width: 12rem;
-  height: 2.5rem;
-  font-size: 18px;
+  width: 9rem;
+  height: 2rem;
+  font-size: 12px;
 }
 
 .button button:hover{
   color: #fff;
   border: 1px solid #fff;
 }
+
+@media (min-width: 768px) {
+  .user img{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 5px;
+    
+  }
+  .users{
+    gap:2.5rem;
+    width: 100vw;
+  }
+  .user p{
+    font-size: 18px !important;
+  }
+  .hero p{
+    font-size: 54px;
+  }
+  .nav{
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav img{
+    height: 80px;
+    margin-left: 3rem;
+  }
+
+  .button button{
+    color: #8a8a8a;
+    background: none;
+    border:1px solid #8a8a8a;
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 18px;
+  }
+ }
